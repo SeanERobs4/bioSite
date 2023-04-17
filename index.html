@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Proxima+Nova">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header><h1>Jon Christman</h1></header>
+    <div id="header"><h1 align="left">Jon Christman</h1><div id="jpc_gallery_link" align="right"><a href="https://www.jpcgallery.com/"><img src="images/ZR8_Sketch.png" alt="JPC Gallery" id="jpc_gallery_png"></a></div></div>
     <div id="navbar">
         <a href="hobbies.html">Hobbies</a>
         <a href="about.html">About</a>
@@ -22,13 +21,47 @@
         <div class="text_div">
             <p id="intro">Meet Jon Christman<br>Artist, Musician, Handyman,<br>Kayaker, Photographer,<br>and so much more!</p>
         </div>
-        <div class="image_div">Photo of Jon will go here.</div>
-        <div class="image_div">Gallery of photos will go here.</div>
-        <div class="text_div">Details of specific accomplishments will go here.</div>
+        <div class="image_div"><img src="images/Landing_Portrait.png"></div>
+        <div class="slideshow-div">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/Landing_Image1.png" style="width:100%">
+                <figcaption>Jon and Angie together in the woods.</figcaption>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/Landing_Image2.png" style="width:100%">
+                <figcaption>The art of Jon Christman.</figcaption>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/Landing_Image3.png" style="width:100%">
+                <figcaption>Jon on one of his many nature hikes.</figcaption>
+            </div>
+        </div>
+        <div class="text_div"><p>Jon Christman is known for his fantastic artwork of varying styles. Occupationally, as a residential maintenance technician in multiple locations near Madison, Wisconsin. He possesses numerous skills and qualifications including painting, drywall, electrical, plumbing, customer service, management experience. He's done work with plastering and drywall repair, and has learned from electricians to install electrical panels.</p></div>
     </div>
     <footer>Check out his instagram: <a href="https://www.instagram.com/jpc_design/"><img src="images/instagram-logo.png" alt="Instagram Link" id="instagram_png"></a>
         Check out his personal website: <a href="https://www.jpcgallery.com/">www.jpcgallery.com</a>
     </footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+</script>
 </body>
     
 </html>
