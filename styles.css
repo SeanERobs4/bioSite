@@ -35,6 +35,19 @@ h1 {
     margin-right: auto;
 }
 
+a:link {
+    text-decoration: none;
+    color: #6fDE6F;
+}
+        
+a:visited {
+  color: #DE5DA6;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #navbar {
     background-color: #6fDE6F;
     overflow: hidden;
@@ -111,7 +124,7 @@ footer a:hover {
     border: solid 5px #228B22;
     height: 400px;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .text_div p {
